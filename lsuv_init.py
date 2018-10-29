@@ -1,8 +1,8 @@
 #code from : https://github.com/ducha-aiki/LSUV-keras/blob/master/lsuv_init.py
 from __future__ import print_function
 import numpy as np
-from keras.models import Model
-from keras.layers import Dense, Convolution2D
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, Conv2D
 
 
 def svd_orthonormal(shape):
