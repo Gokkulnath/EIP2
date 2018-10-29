@@ -29,7 +29,7 @@ def get_activations(model, layer, X_batch):
 
 def LSUVinit(model, batch, verbose=True, margin=0.1, max_iter=10):
     # only these layer classes considered for LSUV initialization; add more if needed
-    classes_to_consider = (Dense, Convolution2D,Conv2D)
+    classes_to_consider = (Dense, Conv2D)
 
     needed_variance = 1.0
 
