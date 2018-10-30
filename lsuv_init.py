@@ -1,5 +1,5 @@
 #code from : https://github.com/ducha-aiki/LSUV-keras/blob/master/lsuv_init.py
-from __future__ import print_function
+#from __future__ import print_function
 import numpy as np
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Conv2D
