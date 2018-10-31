@@ -55,7 +55,7 @@ def LSUVinit(model, batch, verbose=True, margin=0.1, max_iter=10):
         variance = np.var(activations)
         iteration = 0
         if verbose:
-            print(variance)
+            print("Variance :",variance)
         while abs(needed_variance - variance) > margin:
             if np.abs(np.sqrt(variance)) < 1e-7:
                 # avoid zero division
@@ -71,7 +71,7 @@ def LSUVinit(model, batch, verbose=True, margin=0.1, max_iter=10):
 
             iteration += 1
             if verbose:
-                print(variance)
+                print("Variance :",variance)
             if iteration >= max_iter:
                 break
     if verbose:
